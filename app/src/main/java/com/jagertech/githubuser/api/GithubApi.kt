@@ -1,12 +1,15 @@
 package com.jagertech.githubuser.api
 
-class GithubApi{
+import com.jagertech.githubuser.api.DataFormat.UserDataFormat
+import retrofit2.Call
+import retrofit2.http.GET
+import retrofit2.http.Path
 
-    fun getUsersList() {
+interface GithubApi{
 
-    }
+    @GET("users")
+    fun getUsersList():Call<List<UserDataFormat>>
 
-    fun getUserInfo() {
-
-    }
+    @GET("users/{username}")
+    fun getUserInfo(@Path("username") username: String):Call<UserDataFormat>
 }
