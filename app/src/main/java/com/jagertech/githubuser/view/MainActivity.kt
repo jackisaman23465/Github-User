@@ -1,7 +1,8 @@
-package com.jagertech.githubuser
+package com.jagertech.githubuser.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.jagertech.githubuser.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
