@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">GithubUser</string>
+
+    <string name="users_list">用戶清單</string>
+    <string name="user_info">用戶資訊</string>
+
+    <string name="user_name">Name:</string>
+    <string name="user_email">Email:</string>
+    <string name="user_bio">Bio:</string>
+    <string name="user_followers">Followers:</string>
+    <string name="user_following">Following:</string>
+    <string name="user_public_repos">Public Repositories:</string>
+    <string name="user_public_gists">Public Gists:</string>
+    <string name="user_created_at">Created at:</string>
+    <string name="user_updated_at">Updated at:</string>
+    <string name="user_blog">Blog:</string>
+    <string name="user_company">Company:</string>
+
 </resources>

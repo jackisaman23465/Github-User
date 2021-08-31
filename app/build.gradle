@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.jagertech.githubuser"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -47,4 +47,12 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.6.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    //Navigation UI套件
+    implementation "androidx.navigation:navigation-fragment-ktx:2.2.0-beta01"
+    implementation "androidx.navigation:navigation-ui-ktx:2.2.0-beta01"
+
+    //Image URL載入套件
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
 }

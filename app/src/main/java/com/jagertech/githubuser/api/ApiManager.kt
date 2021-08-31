@@ -46,21 +46,5 @@ class ApiManager {
             .build()
 
         githubApi = retrofit.create(GithubApi::class.java)
-        val response = githubApi.getUsersList()
-        response.enqueue(object:Callback<List<UserDataFormat>>{
-            override fun onFailure(call: Call<List<UserDataFormat>>, t: Throwable) {
-                println("1")
-            }
-
-            override fun onResponse(
-                call: Call<List<UserDataFormat>>,
-                response: Response<List<UserDataFormat>>
-            ) {
-                println("2")
-                println(response.body().toString())
-            }
-
-        })
-//        Log.d("ASASASA",response.body().toString())
     }
 }
